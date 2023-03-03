@@ -17,7 +17,7 @@ app.get("/", async (req,res) => {
         res.render("books",{books: response.data});
     } catch (err){
         console.error(err)
-        res.status(500).send('Error');
+        res.status(500).send('Error Not Show Data');
     }
 });
 
