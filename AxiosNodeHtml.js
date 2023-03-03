@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get("/", async (req,res) => {
     try{
-        const response = await axios.get(base_url + 'books');
+        const response = await axios.get(base_url + '/books');
         res.render("books",{books: response.data});
     } catch (err){
         console.error(err)
